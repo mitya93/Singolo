@@ -10,39 +10,43 @@
 </head>
     <body>
         <div class="container">
-        <header> 
+        <header id="home"> 
             <div class="header__info">
                 <h1>Singolo<span>*</span></h1>
-                    <nav>
+                    <nav id="header__nav">
                         <ul class="header__title__nav">
-                            <li class="header__nav">HOME</li> 
-                            <li class="header__nav">SERVICES</li> 
-                            <li class="header__nav">PORTFOLIO</li> 
-                            <li class="header__nav">ABOUT</li>  
-                            <li class="header__nav">CONTACT</li>
+                            <li class="header__nav"><a class="nav__link header__active" href="#home" >HOME</a></li> 
+                            <li class="header__nav"><a class="nav__link" href="#services">SERVICES</a></li> 
+                            <li class="header__nav"><a class="nav__link" href="#portfolio">PORTFOLIO</a></li> 
+                            <li class="header__nav"><a class="nav__link" href="#about">ABOUT</a></li>  
+                            <li class="header__nav"><a class="nav__link" href="#contact">CONTACT</a></li>
                         </ul>
                     </nav>    
             </div>           
         </header>
         <div class="iphone">
-            <div class="iphone_style">
-                <div class="iphone_vertical">
+            <div class ="slider">
+                <div class="iphone_style iphone__active">
+                    <div class="iphone_vertical">
                     <img src="assets/slider/iPhone Vertical.png" alt="iphone_vertical">
-                </div>
-                <div class="iphone_horizontal">
+                    </div>
+                    <div class="iphone_horizontal">
                     <img src="assets/slider/iPhone Horizontal.png" alt="iphone_horizontal">
+                    </div>
+                </div>
+                <div class="iphone_style">
+                    <img src="assets/slider/Slide-2.png" alt="iphone-hidden">
                 </div>
             </div>
-            <div class="chev">    
-                <div class="chev_left">
-                    <img src="assets/slider/chev.png" alt="chev_left">
-                </div>
-                <div class="chev_right">
-                    <img src="assets/slider/chev(1).png" alt="chev_right">
-                </div>
-            </div>     
+            <div class="chev_l left">
+                <img src="assets/slider/chev.png" alt="chev_left">
+            </div>
+            <div class="chev_r right">
+                <img src="assets/slider/chev(1).png" alt="chev_right">
+            </div>
+    
         </div>
-        <div class="services">
+        <div class="services" id="services">
             <h2 class="title__services">Our Services</h2>
                 <div class="our_services">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
                     <div class="services_items">
@@ -127,7 +131,7 @@
                     </div>
         </div>
         </div>
-        <div class="container">
+        <div class="container" id="portfolio">
             <section class="portfolio">
                     <h2 class="title__portfolio">Portfolio</h2>
                     <p class="text__portfolio">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -154,7 +158,7 @@
                         <img class="portfolio__image" src="assets/Portfolio/4.svg" alt="">
                     </div>
             </section>
-            <section class="about__us">
+            <section class="about__us" id="about">
                 <h2 class="title__about__us">About Us</h2>
                 <p class="title__about__us__text">Fusce dapibus, tellus as curcus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus as cursus commodo, tortor mauris condimentum nibh.  </p>
                 <div class="about__us__images">
@@ -189,7 +193,7 @@
             </section>
         </div>  
         <div class="container">
-            <section class="quote">
+            <section class="quote" id="contact">
                 <h2 class="title__qoute">Get a Quote</h2>
                 <p class="text__qoute">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus as cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="block__information">
@@ -222,5 +226,6 @@
                 </div>
             </footer>
         </div>  
+        <script src="script.js"></script>
     </body>
 </html>
