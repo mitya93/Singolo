@@ -288,6 +288,10 @@ color: #f06c64;
     border-color: #c5c5c5;
     color: #c5c5c5;
 }
+.tag-selected {
+	border: 1px solid #c5c5c5;
+	color: #dedede;
+}
 .portfolio__images {
     display: flex;
     flex-wrap: wrap;
@@ -295,13 +299,23 @@ color: #f06c64;
     margin-top: 19px;
 }
 .portfolio__image {
-    margin-bottom: 19.8px; 
     width: 220px;
     height: 187px;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 img:nth-child(n+13) {
     display: none;
 }
+.active-filter{
+    color: #dedede;
+    border-color: #dedede;
+  }
+  .portfolio__image-active{
+    border: 5px solid #F06C64;
+    cursor: pointer;
+  }
 .about__us {
     height: 718.5px;
     background-color: #f2f2f2;
